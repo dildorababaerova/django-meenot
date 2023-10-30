@@ -1,0 +1,2 @@
+# django-meenot
+Django- harjoitteluproekti
