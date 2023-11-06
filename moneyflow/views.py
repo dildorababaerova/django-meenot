@@ -1,3 +1,10 @@
 from django.shortcuts import render
+from .models import Account
 
-# Create your views here.
+def frontpage(request):
+    
+    context ={
+        "accounts":Account.objects.all(),
+    }
+
+    return render(request, "moneyflow/index.html")
